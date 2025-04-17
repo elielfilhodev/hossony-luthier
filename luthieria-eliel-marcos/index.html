@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luthieria Eliel Marcos - Instrumentos de Cordas Artesanais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Luthieria <span>Hossony</span></h1>
+                <p>Instrumentos de corda artesanais desde 1997</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#montagem">Monte Seu Instrumento</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Crafting Excellence in Every String</h2>
+            <p>Instrumentos feitos à mão com paixão e precisão</p>
+            <a href="#montagem" class="btn">Monte seu instrumento</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Eliel Marcos - Mestre Luthier</h2>
+                <p>Com mais de 18 anos de experiência na construção e restauração de instrumentos de corda, Eliel Marcos combina técnicas tradicionais com inovação para criar instrumentos excepcionais. Cada peça é cuidadosamente elaborada para oferecer o melhor em qualidade sonora e durabilidade.</p>
+                <p>Nossa luthieria se especializa em violinos, violas, cellos e contrabaixos, utilizando apenas madeiras de alta qualidade selecionadas pessoalmente pelo mestre luthier.</p>
+            </div>
+            <div class="about-image">
+                <img src="./images/elielmarcos.jpg" alt="Eliel Marcos trabalhando">
+            </div>
+        </div>
+    </section>
+
+    <section id="montagem" class="custom-instrument">
+        <div class="container">
+            <h2>Monte Seu Instrumento Personalizado</h2>
+            <p>Selecione cada detalhe do seu instrumento dos sonhos</p>
+            
+            <div class="builder-container">
+                <div class="builder-options">
+                    <div class="builder-step active" id="step-modelo">
+                        <h3>1. Instrumento</h3>
+                        <div class="options-grid">
+                            <div class="option-card" data-value="violino" data-price="0">
+                                <img src="images/instumentos/violino1.jpg" alt="Violino">
+                                <h4>Violino</h4>
+                                <p>A partir de R$ 1790</p>
+                            </div>
+                            <div class="option-card" data-value="viola" data-price="0">
+                                <img src="images/instrumentos/viola-1.jpg" alt="Viola">
+                                <h4>Viola</h4>
+                                <p>A partir de R$ 1790</p>
+                            </div>
+                            <div class="option-card" data-value="cello" data-price="0">
+                                <img src="images/instrumentos/cello-1.jpg" alt="Cello">
+                                <h4>Cello</h4>
+                                <p>A partir de R$ 12.000</p>
+                            </div>
+                            <div class="option-card" data-value="contrabaixo" data-price="0">
+                                <img src="images/instrumentos/baixo-1.jpg" alt="Contrabaixo">
+                                <h4>Contrabaixo</h4>
+                                <p>A partir de R$ 18.000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="builder-step" id="step-madeira">
+                        <h3>2. Modelos</h3>
+                        <div class="options-grid">
+                            <div class="option-card" data-value="maple-basic" data-price="1790">
+                                <img src="images/modelos/violinos/hv100.jpg" alt="HV 100">
+                                <h4>VIOLINO HV 100</h4>
+                                <p>R$ 1790</p>
+                                <p class="desc">Violino com madeiras nobre
+                                    Tampo: Abeto
+                                    Fundo, Braço, Faixas Acero Maple
+                                    Espelho: Caviúna, estandarte com micro-afinador
+                                    Filetado e harmonizado ótimo volume de som
+                                    Cordas: Eurostring
+                                    Verniz: cor Imbuia envelhecido
+                                    Modelo: Stradivari
+                                    Com Case e Arco (HV 100) Tam 4/4
+                                </p>
+                            </div>
+                            <div class="option-card" data-value="maple-premium" data-price="2440">
+                                <img src="images/modelos/violinos/hv200.jpg" alt="HV 200">
+                                <h4>VIOLINO HV 200</h4>
+                                <p>R$ 2.440</p>
+                                <p class="desc">Violino com madeiras importadas
+                                    Tampo: Abeto
+                                    Fundo e Faixa e braço: Ácero Maple
+                                    Espelho, Estandarte e Quexeira: Ébano.
+                                    Filetado e harmonizado ótimo volume de som
+                                    Cordas: Aço eurostring.
+                                    Verniz: Feito á mão envelhecido cor carvalho
+                                    Modelo: Cópi Antonio Stradivari Gibson de 1689
+                                    Com case e arco
+                                    HV 200 Violino Tam: 4/4</p>
+                            </div>
+                            <div class="option-card" data-value="ebano" data-price="3200">
+                                <img src="images/modelos/violinos/hv300.jpg" alt="HV 300">
+                                <h4>VIOLINO HV 300</h4>
+                                <p>R$ 3.200</p>
+                                <p class="desc">Tampo: Abeto
+                                    Fundo e Faixa e braço: Ácero Maple.
+                                    Espelho, Estandarte E Quexeira: Ébano.
+                                    Filetado e harmonizado ótimo volume de som.
+                                    Cordas: Aço eurostring.
+                                    Verniz: Feito á mão envelhecido cor carvalho.
+                                    Modelo: Cópi Antonio Stradivari. Cremonense 1716
+                                    Com case e arco.
+                                    HV 300 Classe. B2 | Violino Tam: 4/4</p>
+                            </div>
+                            <div class="option-card" data-value="pau-brasil" data-price="4530">
+                                <img src="images/modelos/violinos/hv500.jpg" alt="HV 500">
+                                <h4>VIOLINO HV 500</h4>
+                                <p>R$ 4.530</p>
+                                <p class="desc">Tampo: Abeto Spruce.
+                                    Fundo e Faixa e braço: Ácero Maple.
+                                    Espelho, Estandarte E Quexeira: Ébano.
+                                    Filetado e harmonizado ótimo volume de som.
+                                    Cordas: Aço eurostring.
+                                    Verniz: Feito á mão envelhecido.
+                                    Modelo: Stradivari
+                                    Com case e arco
+                                    HV 500 Classe. A | Violino Tam: 4/4</p>
+                            </div>
+                            <div class="option-card" data-value="pau-brasil" data-price="6351">
+                                <img src="images/modelos/violinos/hv600aa.jpg" alt="HV 600 AA">
+                                <h4>VIOLINO HV 600 AA</h4>
+                                <p>R$ 6.351</p>
+                                <p class="desc">Tampo: Abeto Spruce;
+                                    Fundo e Faixa e braço: Ácero Maple
+                                    Espelho, Estandarte E Quexeira : Ébano.
+                                    Filetado e harmonizado ótimo volume de som.
+                                    Cordas : Aço eurostring.
+                                    Verniz: Fosco Feito á mão envelhecido cor imbuia.
+                                    Modelo: Stradivari cremonence 1716
+                                    Com case e arco
+                                    HV 600 Classe. AA | Violino Tam: 4/4 </p>
+                            </div>
+                            <div class="option-card" data-value="pau-brasil" data-price="7451">
+                                <img src="images/modelos/violinos/hv700aaa.jpg" alt="HV 700 AAA">
+                                <h4>VIOLINO HV 700 AAA</h4>
+                                <p>R$ 7451</p>
+                                <p class="desc">Tampo : Abeto Spruce;
+                                    Fundo e Faixa e braço: Ácero Maple
+                                    Espelho, Estandarte Quexeira: Ébano.
+                                    Filetado e harmonizado ótimo volume de som.
+                                    Cordas: Aço eurostring.
+                                    Verniz: Fosco a Feito á mão envelhecido cor cedro .
+                                    Modelo: Stradivari Gibson ano 1709
+                                    Com case e arco
+                                    HV 700 Classe. AAA | Violino Tam: 4/4</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="builder-step" id="step-acessorios">
+                        <h3>3. Acessórios</h3>
+                        <p>Selecione os acessórios desejados</p>
+                        <div class="accessories-list">
+                            <div class="accessory-item">
+                                <input type="checkbox" id="estandarte" data-price="300">
+                                <label for="estandarte">Estandarte personalizado (+ R$ 300)</label>
+                            </div>
+                            <div class="accessory-item">
+                                <input type="checkbox" id="espelho" data-price="450">
+                                <label for="espelho">Espelho de verniz (+ R$ 450)</label>
+                            </div>
+                            <div class="accessory-item">
+                                <input type="checkbox" id="case-premium" data-price="800">
+                                <label for="case-premium">Case Premium (+ R$ 800)</label>
+                            </div>
+                            <div class="accessory-item">
+                                <input type="checkbox" id="arco-carbon" data-price="1200">
+                                <label for="arco-carbon">Arco de fibra de carbono (+ R$ 1.200)</label>
+                            </div>
+                            <div class="accessory-item">
+                                <input type="checkbox" id="gravura" data-price="600">
+                                <label for="gravura">Gravura personalizada (+ R$ 600)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="builder-step" id="step-resumo">
+                        <h3>4. Resumo do Seu Instrumento</h3>
+                        <div class="summary-box">
+                            <div class="summary-item">
+                                <h4>Instrumento:</h4>
+                                <p id="summary-modelo">-</p>
+                            </div>
+                            <div class="summary-item">
+                                <h4>Modelo:</h4>
+                                <p id="summary-madeira">-</p>
+                            </div>
+                            <div class="summary-item">
+                                <h4>Acessórios:</h4>
+                                <p id="summary-acessorios">-</p>
+                            </div>
+                            <div class="summary-item total">
+                                <h4>Total:</h4>
+                                <p id="summary-total">R$ 0,00</p>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h4>Informe seus dados para gerar o orçamento</h4>
+                            <form id="orcamento-form">
+                                <div class="form-group">
+                                    <input type="text" id="nome" placeholder="Seu nome completo" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" placeholder="Seu e-mail" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="telefone" placeholder="Seu telefone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="observacoes" placeholder="Observações ou requisitos especiais"></textarea>
+                                </div>
+                                <button type="submit" class="btn">Gerar Orçamento em PDF</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="builder-navigation">
+                        <button id="prev-step" class="btn btn-secondary" disabled>Anterior</button>
+                        <button id="next-step" class="btn">Próximo</button>
+                    </div>
+                </div>
+
+                <div class="builder-preview">
+                    <div class="preview-image">
+                        <img id="instrument-preview" src="images/instumentos/violino1.jpg" alt="Pré-visualização">
+                    </div>
+                    <div class="preview-details">
+                        <h3>Seu Instrumento</h3>
+                        <ul id="preview-details-list">
+                            <li>Selecione as opções ao lado</li>
+                        </ul>
+                        <div class="price-display">
+                            <h4>Total Estimado:</h4>
+                            <p id="preview-price">R$ 0,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua Engenheiro Bernardo Martins Junior - Taquarituba/SP 18743-082</p>
+                    <p><i class="fas fa-phone"></i> (14) 99680-4141</p>
+                    <p><i class="fas fa-envelope"></i> eliel-luthier@hotmail.com</p>
+                    <p><i class="fas fa-clock"></i> Seg-Sex: 9h-18h</p>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contact-phone" placeholder="Seu telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Luthieria Hossony</h3>
+                    <p>Excelência em instrumentos de corda desde 1997</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#montagem">Monte Seu Instrumento</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Receba novidades e promoções</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Luthieria Hossony. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="pdf.js"></script>
+</body>
+</html>
